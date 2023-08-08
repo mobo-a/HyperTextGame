@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" type="text/css" href="StartOfTheEnd.css">
+    <title>Sign Up</title>
+</head>
+<body>
+<h1> Login Page</h1>
+
+</body>
+<div class="menu-bar">
+    <ul>
+        <li class="active"><a href="Welcome.html">Home</a></li>
+        <li><a href="Warning.html">Warning Page</a></li>
+        <li><a href="Login%20Page%202.html">Log in Page</a></li>
+        <li><a href="Sign%20Up%20Page.html">Sign Up Page</a></li>
+        <li><a href="HyperText%20Generator.html">Story Generator</a></li>
+    </ul>
+
+</div>
+<!-- Button to open the modal login form -->
+<button onclick="document.getElementById('id01').style.display='block'">Login</button>
+
+<!-- The Modal -->
+<div id="id01" class="modal">
+  <span onclick="document.getElementById('id01').style.display='none'"
+        class="close" title="Close Modal">&times;</span>
+
+    <!-- Modal Content -->
+    <form class="modal-content animate" action="/action_page.php">
+        <div class="imgcontainer">
+            <img src="avatar2.png" alt="Avatar" class="avatar">
+        </div>
+
+        <div class="container">
+            <label for="uname"><b>Username</b></label>
+            <input type="text" placeholder="Enter Username" name="uname" required>
+
+            <label for="psw"><b>Password</b></label>
+            <input type="password" placeholder="Enter Password" name="psw" required>
+
+            <button type="submit">Login</button>
+            <label>
+                <input type="checkbox" checked="checked" name="remember"> Remember me
+            </label>
+        </div>
+
+        <div class="container" style="background-color:#f1f1f1">
+            <button type="button" onclick="document.getElementById('id01').style.display='none'" class="cancelbtn">Cancel</button>
+            <span class="psw">Forgot <a href="#">password?</a></span>
+        </div>
+    </form>
+</div>
